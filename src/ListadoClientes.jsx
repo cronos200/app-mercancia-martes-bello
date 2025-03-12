@@ -8,7 +8,7 @@ function ListadoClientes() {
       <section className="panel-control-clientes">
         {
           clientes.map ((cliente)=>{
-            return <Card cualquirNombre={cliente} />
+            return <Card type={'clientes'} cualquirNombre={cliente} />
           })
         }
       </section>

@@ -54,3 +54,22 @@ export let clientes = [
     id: 9,
 },
 ]
+
+export let envios = [
+{
+    origen: 'medellin',
+    destino: 'bogota',
+},
+{
+    origen: 'bogota',
+    destino: 'cali',
+},
+{
+    origen: 'cali',
+    destino: 'pereria',
+},
+{
+    origen: 'pereria',
+    destino: 'medellin',
+},
+]

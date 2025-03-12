@@ -1,14 +1,17 @@
 import Card from "./Card";
 import MenuLateral from "./MenuLateral";
+import { envios } from "./database";
 
 function PanelControl() {
   return (
     <div className="panel-control">
       <MenuLateral />
       <section className="panel-control-section">
-        {/* <Card />
-        <Card />
-        <Card /> */}
+      {
+          envios.map ((envio)=>{
+            return <Card type={'envios'} cualquirNombre={envio} />
+          })
+        }
       </section>
     </div>
   )
